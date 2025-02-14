@@ -14,6 +14,8 @@ namespace AGDDPlatformer
         [Header("Audio")]
         public AudioSource source;
         public AudioClip jumpSound;
+        public AudioClip smoochSounds;
+
 
         Vector2 startPosition;
         bool startOrientation;
@@ -131,5 +133,13 @@ namespace AGDDPlatformer
         {
             this.jumpBoost = jumpBoost;
         }
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
+            {
+                source.PlayOneShot(smoochSounds);
+                Debug.Log("Kiss should play");
+            }
+        }  
     }
 }
