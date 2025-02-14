@@ -428,3 +428,59 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 74.624714 seconds.
+  path: Assets/Scenes/Level2.unity
+  artifactKey: Guid(1c0dff4d99ed4a44b81a083f77b57fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level2.unity using Guid(1c0dff4d99ed4a44b81a083f77b57fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26b86465e4f2712260607197a8e321f7') in 0.021222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.439821 seconds.
+  path: Assets/Scenes/Level2 1.unity
+  artifactKey: Guid(9bb042188c696459d89c4febd71d0737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level2 1.unity using Guid(9bb042188c696459d89c4febd71d0737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ccc7f758804a2132a1af398738fa05') in 0.024011 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 14.628346 seconds.
+  path: Assets/Scenes/Level_Teddi.unity
+  artifactKey: Guid(9bb042188c696459d89c4febd71d0737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_Teddi.unity using Guid(9bb042188c696459d89c4febd71d0737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b0c504adf7190ad98c35cc75c43618') in 0.001858 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.997548 seconds.
+  path: Assets/Scenes/Level_Teddi 1.unity
+  artifactKey: Guid(78b8da18d93d64e24b3c480a8f3008a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_Teddi 1.unity using Guid(78b8da18d93d64e24b3c480a8f3008a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22801a18e921eb0a5a0385a7d2e8ad4d') in 0.001342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.818682 seconds.
+  path: Assets/Scenes/Level_Teddi 2.unity
+  artifactKey: Guid(e101a829406504448ba0d6753d6b4b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_Teddi 2.unity using Guid(e101a829406504448ba0d6753d6b4b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a60546df64e5d6bfdd3c93c8f424a542') in 0.000646 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.222798 seconds.
+  path: Assets/Scenes/Level_Fannar.unity
+  artifactKey: Guid(78b8da18d93d64e24b3c480a8f3008a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_Fannar.unity using Guid(78b8da18d93d64e24b3c480a8f3008a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f278a1aa9826176da27f8d6325f0264e') in 0.001247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 24.071639 seconds.
+  path: Assets/Scenes/Level_Siggi.unity
+  artifactKey: Guid(e101a829406504448ba0d6753d6b4b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_Siggi.unity using Guid(e101a829406504448ba0d6753d6b4b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b4f84a9b589d42830f82cc6a3633434') in 0.001212 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
