@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 namespace AGDDPlatformer
 {
-    public class GameManager : MonoBehaviour
+   public class GameManager : MonoBehaviour
     {
         public static GameManager instance;
 
@@ -13,6 +13,11 @@ namespace AGDDPlatformer
         public GameObject canvas;
         [Header("Players")]
         public PlayerController[] players;
+
+        [Header("Interactive Objects")]
+        private Door[] doors;
+        private Lever[] levers;
+
 
         [Header("Level")]
         public PlayerGoal[] playerGoals;
@@ -43,7 +48,12 @@ namespace AGDDPlatformer
             {
                 playerGoals = FindObjectsOfType<PlayerGoal>();
             }
+
+            // Find all doors and levers when the game starts
+            doors = FindObjectsOfType<Door>();
+            levers = FindObjectsOfType<Lever>();
         }
+
 
         IEnumerator Start()
         {
@@ -119,17 +129,31 @@ namespace AGDDPlatformer
             }
         }
 
-        void ResetGame()
+        public void ResetGame()
         {
             SceneManager.LoadScene(firstLevel);
         }
 
-        void ResetLevel()
+        public void ResetLevel()
         {
+            // Reset all players
             foreach (PlayerController player in players)
             {
                 player.ResetPlayer();
             }
+
+            // Reset all doors
+            foreach (Door door in doors)
+            {
+                door.ResetDoor(); // Add this function in Door.cs
+            }
+
+            // Reset all levers
+            foreach (Lever lever in levers)
+            {
+                lever.ResetLever(); // Add this function in Lever.cs
+            }
         }
+
     }
 }
