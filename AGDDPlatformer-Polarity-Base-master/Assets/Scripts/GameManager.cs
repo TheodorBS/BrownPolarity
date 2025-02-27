@@ -9,6 +9,8 @@ namespace AGDDPlatformer
     {
         public static GameManager instance;
 
+
+        public GameObject canvas;
         [Header("Players")]
         public PlayerController[] players;
 
@@ -34,6 +36,8 @@ namespace AGDDPlatformer
         void Awake()
         {
             instance = this;
+
+            canvas.SetActive(true);
 
             if (playerGoals.Length == 0)
             {
