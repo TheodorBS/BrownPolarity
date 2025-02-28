@@ -7,7 +7,6 @@ public class Portal_Script : MonoBehaviour
 {
     public Transform newPortalPos;
     public Vector2 offset = new Vector2(0.5f, 0);
-    private static bool isTeleporting = false;
     private static HashSet<string> teleportingPlayers = new HashSet<string>();
 
     private void OnTriggerEnter2D(Collider2D other)
