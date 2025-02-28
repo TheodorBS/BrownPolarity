@@ -6,6 +6,7 @@
 /Assets/AssetStoreTools*
 /.idea/
 Logs/*.log
+UserSettings/
 
 /.collabignore
 /.vs/
