@@ -421,13 +421,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4691332085822845703, guid: 1d096467bd11505479937aff780e5cd2,
         type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 964341844}
+    - target: {fileID: 4691332085822845703, guid: 1d096467bd11505479937aff780e5cd2,
+        type: 3}
       propertyPath: nextLevel
       value: Level2
       objectReference: {fileID: 0}
     - target: {fileID: 4691332085998625991, guid: 1d096467bd11505479937aff780e5cd2,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4691332086094480774, guid: 1d096467bd11505479937aff780e5cd2,
         type: 3}
@@ -564,6 +569,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d096467bd11505479937aff780e5cd2, type: 3}
+--- !u!1 &964341844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4691332085998625991, guid: 1d096467bd11505479937aff780e5cd2,
+    type: 3}
+  m_PrefabInstance: {fileID: 964341843}
+  m_PrefabAsset: {fileID: 0}
 --- !u!850595691 &1382714400
 LightingSettings:
   m_ObjectHideFlags: 0
