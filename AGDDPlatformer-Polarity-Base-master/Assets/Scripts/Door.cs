@@ -6,12 +6,15 @@ public class Door : MonoBehaviour
     [SerializeField] private Collider2D doorCollider; // To disable collision
     [SerializeField] private SpriteRenderer doorRenderer; // To control opacity
 
+    public bool StartState;
+
     [SerializeField] private float fadeOpacity = 0.2f; // Opacity when "open"
 
     private void Start()
     {
         if (doorRenderer == null)
             doorRenderer = GetComponent<SpriteRenderer>(); // Get renderer if not assigned
+        SetDoorState(StartState);
     }
 
     public void SetDoorState(bool isOpen)

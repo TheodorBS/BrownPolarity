@@ -1,10 +1,13 @@
 using UnityEngine;
+using System.Collections;
 
 public class Lever : MonoBehaviour
 {
     [SerializeField] private Door linkedDoor; // Assign this in the inspector
-    private bool isActivated = false;
+    public bool isActivated = false;
     private Transform leverTransform;
+    private bool isOnCooldown = false;
+    [SerializeField] private float cooldownTime = 1f; // Adjust cooldown duration
 
     private void Start()
     {
@@ -14,10 +17,18 @@ public class Lever : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player1") || (other.CompareTag("Player2"))) // Check if the player interacts
+        if (!isOnCooldown && (other.CompareTag("Player1") || other.CompareTag("Player2")))
         {
-            ToggleLever();
+            StartCoroutine(ToggleLeverWithCooldown());
         }
+    }
+
+    private IEnumerator ToggleLeverWithCooldown()
+    {
+        isOnCooldown = true;
+        ToggleLever();
+        yield return new WaitForSeconds(cooldownTime);
+        isOnCooldown = false;
     }
 
     private void ToggleLever()
@@ -45,5 +56,4 @@ public class Lever : MonoBehaviour
         isActivated = false; // Set it back to default (unpressed)
         RotateLever(); // Move lever back to its starting position
     }
-
 }
