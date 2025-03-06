@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,6 +18,8 @@ namespace AGDDPlatformer
         [Header("Interactive Objects")]
         private Door[] doors;
         private Lever[] levers;
+
+        private MovingPlatform[] platforms;
 
 
         [Header("Level")]
@@ -52,6 +55,7 @@ namespace AGDDPlatformer
             // Find all doors and levers when the game starts
             doors = FindObjectsOfType<Door>();
             levers = FindObjectsOfType<Lever>();
+            platforms = FindObjectsOfType<MovingPlatform>();
         }
 
 
@@ -152,6 +156,11 @@ namespace AGDDPlatformer
             foreach (Lever lever in levers)
             {
                 lever.ResetLever(); // Add this function in Lever.cs
+            }
+                        // Reset all platforms
+            foreach (MovingPlatform platform in platforms)
+            {
+                platform.ResetPlatform();
             }
         }
 

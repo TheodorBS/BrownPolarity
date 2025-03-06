@@ -58,7 +58,7 @@ namespace AGDDPlatformer
                 //If it is not grounded we can detatch. 
                 otherBody.Detatch();
                 //If it is a player, give them a small boost to simulate inertia.
-                otherBody.GetComponent<PlayerController>()?.SetJumpBoost(new Vector2(velocity.x, 0));
+                //otherBody.GetComponent<PlayerController>()?.SetJumpBoost(new Vector2(velocity.x, 0));
             }
         }
 
@@ -70,7 +70,13 @@ namespace AGDDPlatformer
             //We can detatch if the object exits the collision.
             otherBody.Detatch();
             //If it is a player, give them a small boost to simulate inertia.
-            otherBody.GetComponent<PlayerController>()?.SetJumpBoost(new Vector2(velocity.x, 0));
+            //otherBody.GetComponent<PlayerController>()?.SetJumpBoost(new Vector2(velocity.x, 0));
+        }
+
+        public void ResetPlatform()
+        {
+            transform.position = StartPoint.position;
+            GoingTowards = Points.End;
         }
     }
 }
